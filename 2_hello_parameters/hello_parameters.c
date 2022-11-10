@@ -9,11 +9,30 @@ MODULE_AUTHOR("Mateusz Rzeczyca");
 MODULE_DESCRIPTION("Hello Parameters!");
 MODULE_VERSION("1:0.1-helloparameters");
 
+// data types:
+// bool
+// invbool
+// charp
+// int
+// long
+// short
+// uint
+// ulong
+// ushort
+
 int value_int;
 int value_arr[4];
 char* value_name;
 int value_int_cb = 0;
  
+// types of permissions:
+// S_IWUSR
+// S_IRUSR
+// S_IXUSR
+// S_IRGRP
+// S_IWGRP
+// S_IXGRP
+
 // /sys/module/hello_parameters/parameters/value_int
 module_param(value_int, int, S_IRUSR | S_IWUSR);
 
