@@ -3,6 +3,11 @@
 
 ```bash
 cat /proc/devices
+sudo make
+sudo insmod static_allocation.ko
+sudo insmod dynamic_allocation.ko
+sudo rmmod static_allocation
+sudo rmmod dynamic_allocation
 ```
 
 ## Notes
